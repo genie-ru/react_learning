@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="/libs/react.development.js"></script>
+   <script src="/libs/react-dom.development.js"></script>
+   <script src="/libs/babel-standalone.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        // POINT ReactをHTMLにマウントする書き方
+        const appEl = document.querySelector('#app');
+        const root = ReactDOM.createRoot(appEl);
+        //必ずコンポーネントの先頭は大文字で始める
+        //なぜかというとbabelからjsxからjsに変換するときに、大文字を見てコンポーネントだと判断するため
+        //小文字だとただのHTMLタグとして扱われる
+        function Example() {
+            //jsxで定義するものを関数コンポーネントと呼ぶ
+            return <h1>Hello componets</h1>;
+        }
+        
+        //jsxが複数行になる場合は()で囲む
+        root.render(<Example />);
+        
+    </script>
+</body>
+</html>
