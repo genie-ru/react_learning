@@ -4,6 +4,7 @@ const Expression = () => {
     const title = "Expression"
     const arry = ['item', 'item2', 'item3'];
     const hello = (arg) => `${arg} Function`;
+    const JSX = <h3>JSX</h3>
     return (
         //tolowercase()は文字列を小文字に変換する
         //titleにメソッドを追加出来る。
@@ -13,6 +14,7 @@ const Expression = () => {
             <h3>{hello('Hello')}</h3>
             <h3>{/*画面上には表示されない*/}</h3>
             {<h3>Hello JSX</h3>}
+            {JSX}
         </div>
     )
 }
