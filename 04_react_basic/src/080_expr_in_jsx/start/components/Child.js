@@ -1,5 +1,4 @@
 import "./Child.css";
-
 const Child = () => {
   return (
     <div className="component">
